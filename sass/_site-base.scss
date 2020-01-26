@@ -1,0 +1,51 @@
+@mixin gridItens {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 2em 4em;
+}
+
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+$bg-primary: #f8f9fa;
+$color-primary: #fd7e14;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p, li {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 1.1em;
+}
+
+img {
+	width: 100%;
+}
+
+button:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+
